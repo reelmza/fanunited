@@ -1,0 +1,666 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>ManUtd Fan Page</title>
+  <meta name="description" content="A static webpage for Manchester United Fans">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Manchester United Fan Page">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://breezy-sound.surge.sh">
+  <meta property="og:image" content="public/icons/ogImage.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="public/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/icons/favicon-16x16.png">
+  <link rel="manifest" href="public/site.webmanifest">
+ 
+  <!-- Place favicon.ico in the root directory -->
+
+    <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- StyleSheets -->
+  <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="public/css/normalize.css">
+  
+  <!-- CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#111">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark text-white d-flex justify-content-between fixed-top" id="navbar">
+
+      <!-- Club Label -->
+      <div class="navbar-brand d-flex flex-row align-items-center" id="header-image">
+        <img src="public/img/clubs/logo.svg" width="40px" class="img-fluid"/>  <h6 id="headerText">MAN.<br>UNITED F.C</h6> 
+      </div>
+      
+      <!-- Dropdown -->
+      <div class="dropdown d-none">
+        <button type="button" id="dropdown-btn" class="btn btn-light btn-md dropdown-toggle" data-toggle="dropdown">
+          <i class="fas fa-user-circle"></i> LOGIN
+        </button>
+      </div>
+  
+      <div class="dropdown-menu">
+        <div class="dropdown-item">About</div>
+        <div class="dropdown-item">Author</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Add your site or application content here -->
+  <main role="main" id="main" class="mt-n4">
+    <div class="container-fluid">
+      <div class="row">
+
+  <!--First column-->
+      <div class="col-md-5" id="firstColumn">
+
+          <!-- Carousel Slide -->
+          <div class="row carousel slide pt-5" data-ride="carousel" id="playerCarousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators mb-n1">
+              <li data-target="#playerCarousel" data-slide-to="0" class="active bg-light"></li>
+              <li data-target="#playerCarousel" data-slide-to="1" class="bg-light"></li>
+              <li data-target="#playerCarousel" data-slide-to="2" class="bg-light"></li>
+              <li data-target="#playerCarousel" data-slide-to="3" class="bg-light"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <!-- Player 1 -->
+              <div class="carousel-item active" id="carousel">
+                <img src="public/img/players/luke.png" alt="andreas" width="115px" class="img-fluid">
+                <div class="carousel-caption text-right">
+                  <h4 class="mb-n1">23</h4>
+                  <h4 id="playerName">Luke Shaw</h4>
+                  <p class="mb-0" id="playerPosition"><span class="badge badge-light" id="noShadow">MID FIELD <i class="fas fa-arrow-down"></i></span> </p>
+                  <p class="mb-n2 mt-0" id="playerPosition"> <span class="badge badge-danger"> MONTHS PLAYER <i class="fas fa-award text-light" id="noShadow"></i></span></p>
+                </div>
+              </div>
+              <!-- Player 2 -->
+              <div class="carousel-item" id="carousel">
+                <img src="public/img/players/bruno.png" alt="matic" width="115px" class="img-fluid">
+                <div class="carousel-caption text-right">
+                  <h4 class="mb-n1">18</h4>
+                  <h4 id="playerName">Bruno Fernandes </h4>
+                  <p class="mb-0" id="playerPosition"><span class="badge badge-light" id="noShadow">MID-FIELD <i class="fas fa-arrow-up"></i></span> </p>
+                  <p class="mb-n2 mt-0" id="playerPosition"> <span class="badge badge-danger"> BEST PLAYER <i class="fas fa-award text-light" id="noShadow"></i></span></p>
+                </div>
+              </div>
+
+              <!-- Player 3 -->
+              <div class="carousel-item" id="carousel">
+                <img src="public/img/players/greenwood.png" alt="matic" width="115px" class="img-fluid">
+                <div class="carousel-caption text-right">
+                  <h4 class="mb-n1">11</h4>
+                  <h4 id="playerName">Mason Greenwood</h4>
+                  <p class="mb-0" id="playerPosition"><span class="badge badge-light" id="noShadow">ATTACK <i class="fas fa-arrow-up"></i></span> </p>
+                  <p class="mb-n2 mt-0" id="playerPosition"> <span class="badge badge-danger"> YOUNGEST PLAYER <i class="fas fa-award text-light" id="noShadow"></i></span></p>
+                </div>
+              </div>
+
+              <!-- Player 4 -->
+              <div class="carousel-item" id="carousel">
+                <img src="public/img/players/maguire.png" alt="matic" width="115px" class="img-fluid">
+                <div class="carousel-caption text-right">
+                  <h4 class="mb-n1">05</h4>
+                  <h4 id="playerName">Harry Maguire</h4>
+                  <p class="mb-0" id="playerPosition"><span class="badge badge-light" id="noShadow">DEFENSE <i class="fas fa-arrow-down"></i></span> </p>
+                  <p class="mb-n2 mt-0" id="playerPosition"> <span class="badge badge-danger"> CAPTAIN <i class="fas fa-award text-light" id="noShadow"></i></span></p>
+                </div>
+              </div>
+
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev pt-5" href="#playerCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next pt-5" href="#playerCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+
+        <!-- Fixtures Bar -->
+          <div class="mt-0 text-dark">
+            <div class="row">
+              <div class="col text-center text-dark pt-3 pb-1" id="fixtureText"><h4><b> <i class="fas fa-futbol"></i> TODAYS FIXTURES</b></h4></div>
+            </div>
+            <div class="row pt-2 pb-0" id="fixturesContainer">
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center text-center" id="firstClub">
+                <img src="public/img/clubs/manchesterColor.svg" class="img-fluid" width="48px"/>
+                <h6 class="pt-2" id="clubText">MCH F.C</h6>
+              </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center text-center" id="vsText">
+                <h4 id="clubText">VS</h4>
+                <h6 class="mt-n2" id="clubText">20:00 </h6>
+              </div>
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center text-center" id="secondClub">
+                <img src="public/img/clubs/barcelonaColor.svg" class="img-fluid" width="48px"/>
+                <h6 class="pt-2" id="clubText"> BCL F.C </h6>
+              </div>
+            </div>
+          </div>
+
+        <!-- Player Search -->
+        <!-- <form class="mt-3 mb-2" id="searchForm">
+          <div class="form-group-lg d-flex">
+            <input class="form-control-lg m-0 " id="searchBox" type="search" placeholder="Player Name" name="search"/>
+            <button class="btn px-3 " id="searchIcon"><i class="fas fa-search "></i></button>
+          </div>
+        </form> -->
+          <form class="mt-3 mb-2 " id="searchForm">
+            <div class="input-group">
+              <input class="form-control m-0 " id="searchBox" type="search" placeholder="Player Name" name="search"/>
+              <button class="input-group-btn px-3 mt-n0 d-flex align-items-center text-light" id="searchIcon" type="submit"><i class="fas fa-search "></i></button>
+            </div>
+          </form>
+          <!-- Alert For Search Error -->
+          <div class="alert alert-danger alert-dissmisible" id="alert" style="display: none;"> 
+            <button class="close" type="button" data-dismiss="alert">&times;</button>
+            Player <strong>Not Found</strong>, please enter correct name and try again!
+          </div>
+
+        <!-- Feautured Stats -->
+        <div class="row">
+          <!-- Labels -->
+            <div class="col-12 text-justify text-xl-center py-4" id="rankLabel">
+              <h4 class="text-center"> <i class="fas fa-table"></i> PLAYERS RANKING</h4>
+              <p>Player seasonal rating; arranged in order of the most appearances and goals taken with the most forms for the season. Players with no form or goals are not shortlisted! <br><br> <span class="badge badge-dark">GK</span> stands for Goal Keeper
+              <span class="badge badge-dark">MD</span> Stands for MidField and <span class="badge badge-dark">FW</span class="badge badge-dark"> Stands for Strikers
+              </p>
+            </div>
+
+            <div class="col-12 " id="statsTable">
+              <div class="row " id="tableLabel">
+                <div class="col-1">NO.</div>
+                <div class="col-3">NAME</div>
+                <div class="col-2">POS</div>
+                <div class="col-3">S/GOALS</div>
+                <div class="col-3">GAMES</div>
+              </div>
+
+              <!-- GoalKeeper -->
+              <div class="row py-2 degeaS" >
+                <div class="col-1">1</div>
+                <div class="col-3">D. Degea</div>
+                <div class="col-2"> <span class="badge badge-danger">GK 01</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 grantS leeS" id="tableShade">
+                <div class="col-1">2</div>
+                <div class="col-3">L. Grant</div>
+                <div class="col-2"><span class="badge badge-danger">GK 13</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 romeroS sergioS">
+                <div class="col-1">3</div>
+                <div class="col-3">S. Romero</div>
+                <div class="col-2"> <span class="badge badge-danger">GK 22</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 handersonS" id="tableShade">
+                <div class="col-1">4</div>
+                <div class="col-3">D. Handerson</div>
+                <div class="col-2"><span class="badge badge-danger">GK 34</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <!-- Defends -->
+              <div class="row py-2 victorS lindelofS">
+                <div class="col-1">5.</div>
+                <div class="col-3">V. Lindelof</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 ericS BailyS" id="tableShade">
+                <div class="col-1">6.</div>
+                <div class="col-3">E. Bailly</div>
+                <div class="col-2"><span class="badge badge-primary">DF 03</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 marcosS rojoS">
+                <div class="col-1">6.5</div>
+                <div class="col-3">M. Rojo</div>
+                <div class="col-2"><span class="badge badge-primary">DF 16</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 lukeS shawS" id="tableShade">
+                <div class="col-1">7.</div>
+                <div class="col-3">L. Shaw</div>
+                <div class="col-2"><span class="badge badge-primary">DF 23</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 fossuS mensahS">
+                <div class="col-1">8.</div>
+                <div class="col-3">TF. Mensah</div>
+                <div class="col-2"><span class="badge badge-primary">DF 24</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 aaronS aronS bisakaS bissakaS" id="tableShade">
+                <div class="col-1">9.</div>
+                <div class="col-3">AW. Bisaaka</div>
+                <div class="col-2"> <span class="badge badge-primary">DF 29</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 harryS maguireS">
+                <div class="col-1">10.</div>
+                <div class="col-3">H. Maguire</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 chris smalling" id="tableShade">
+                <div class="col-1">11.</div>
+                <div class="col-3">C. Smalling</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 axelS tuanzebeS">
+                <div class="col-1">12.</div>
+                <div class="col-3">A. Tuanzebe</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 philS jonesS" id="tableShade">
+                <div class="col-1">13.</div>
+                <div class="col-3">P. Jones</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 brandonS williamsS">
+                <div class="col-1">14.</div>
+                <div class="col-3">B. Williams</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 digoS dalotS" id="tableShade">
+                <div class="col-1">15.</div>
+                <div class="col-3">D. Dalot</div>
+                <div class="col-2"><span class="badge badge-primary">DF 02</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <!-- MidField -->
+              <div class="row py-2 pogbaS paulS">
+                <div class="col-1">16.</div>
+                <div class="col-3">P. Pogba</div>
+                <div class="col-2"><span class="badge badge-success">MF 06</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 jesseS lingardS" id="tableShade">
+                <div class="col-1">17.</div>
+                <div class="col-3">J. Lingard</div>
+                <div class="col-2"> <span class="badge badge-success">MF 14</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 andreasS perieraA perrieraS">
+                <div class="col-1">18.</div>
+                <div class="col-3">A. Periera</div>
+                <div class="col-2"> <span class="badge badge-success">MF 15</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 brunoS fernandesS" id="tableShade">
+                <div class="col-1">19.</div>
+                <div class="col-3">B. Fernandes</div>
+                <div class="col-2"> <span class="badge badge-success">MF 18</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 nemanjaS maticS">
+                <div class="col-1">20.</div>
+                <div class="col-3">N. Matic</div>
+                <div class="col-2"> <span class="badge badge-success">MF 31</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 jamesS garnerS" id="tableShade">
+                <div class="col-1">21.</div>
+                <div class="col-3">J. Garner</div>
+                <div class="col-2"><span class="badge badge-success">MF 37</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 donnyS vanS beekS">
+                <div class="col-1">22.</div>
+                <div class="col-3">D. Van de Beek</div>
+                <div class="col-2"><span class="badge badge-success">MF 34</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 scottS tominayS" id="tableShade">
+                <div class="col-1">23.</div>
+                <div class="col-3">S. McTominay</div>
+                <div class="col-2"><span class="badge badge-success">MF 39</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 fredS">
+                <div class="col-1">23.</div>
+                <div class="col-3">Fred</div>
+                <div class="col-2"><span class="badge badge-success">MF 17</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 juanS mataS" id="tableShade">
+                <div class="col-1">24.</div>
+                <div class="col-3">J. Mata</div>
+                <div class="col-2"><span class="badge badge-success">MF 08</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+
+              <!-- Attack -->
+              <div class="row py-2 anthonyS martialS">
+                <div class="col-1">25.</div>
+                <div class="col-3">A. Martial</div>
+                <div class="col-2"> <span class="badge badge-warning">FW 09</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 rasfordS marcusS" id="tableShade">
+                <div class="col-1">26.</div>
+                <div class="col-3">M. Rashford</div>
+                <div class="col-2"> <span class="badge badge-warning">FW 10</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 ighaloS idionS">
+                <div class="col-1">28.</div>
+                <div class="col-3">I. Ighalo</div>
+                <div class="col-2"> <span class="badge badge-warning">FW 25</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+              <div class="row py-2 greenwoodS masonS" id="tableShade">
+                <div class="col-1">29.</div>
+                <div class="col-3">M. Greenwood</div>
+                <div class="col-2"> <span class="badge badge-warning">FW 11</span></div>
+                <div class="col-3">0</div>
+                <div class="col-3">0</div>
+              </div>
+
+              <div class="row py-2 jamesS danielS">
+                <div class="col-1">30.</div>
+                <div class="col-3">D. James</div>
+                <div class="col-2"> <span class="badge badge-warning">FW 21</span></div>
+                <div class="col-3">12</div>
+                <div class="col-3">24</div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+  <!--Second Column-->
+      <div class="col-md-7" id="secondColumn">
+
+        <!-- Sling Gallery -->
+        <div class="row">
+          <div class="col-12 text-center pt-2" id="slingTitle">
+            <h3>SQUAD GALLERY</h3>
+          </div>
+        </div>
+        <div class="row my-3 mx-0 d-flex flex-row " id="slingGallery">
+<!-- Line Break -->
+          <div class="col-12 text-center">
+            <h3>DEFENSE/GK</h3>
+          </div>
+          <div class="w-100"></div>
+<!-- Line Break -->
+<!-- Degea -->
+          <div class="col-6 col-xl-3">
+            <div class="playerSlingImage degea">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+              D. de Gea <br>
+              SPAIN,  <br>
+              1994 
+              
+            </div>
+          </div>
+<!-- Maguire -->
+          <div class="col-6 col-xl-3">
+            <div class="playerSlingImage maguire">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+              H. Maguire <br>
+              ENGLAND, <br>
+              1993
+            </div>
+          </div>
+<!-- Lindelof -->
+          <div class="col-6 col-xl-3 mt-4 mt-xl-0">
+            <div class="playerSlingImage lindelof">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+              V. Lindelof <br>
+              SWEDEN,<br>
+              1994
+            </div>
+          </div>
+<!-- Wan Bisaaka -->
+          <div class="col-6 col-xl-3 mt-4 mt-xl-0">
+            <div class="playerSlingImage bissaka">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class="  d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                AW. Bissaka <br>
+                ENGLAND, <br>
+                1997
+            </div>
+          </div>
+<!-- Line Break -->
+          <div class="w-100"></div>
+          <div class="col-12 text-center mt-4">
+            <h3>MID FIELD</h3>
+          </div>
+          <div class="w-100"></div>
+<!-- Line Break -->
+<!-- Paul Pogba-->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage pogba">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                P. Pogba <br>
+                FRANCE, <br>
+                1993
+            </div>
+          </div>  
+<!-- Bruno Fernandes -->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage bruno">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                B. Fernandes <br>
+                PORTUGAL, <br>
+                1994
+            </div>
+          </div> 
+<!-- Nemanja Matic         -->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage matic">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class="  d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                N. Matic <br>
+                SERBIA, <br>
+                1988
+            </div>
+          </div> 
+<!-- Scott -->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage scott">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class="  d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                S. McTominay <br>
+                SCOTLAND, <br>
+                1996
+            </div>
+          </div>    
+
+<!-- Line Break  -->
+          <div class="w-100"></div>
+          <div class="col-12 text-center mt-4">
+            <h3>ATTACK</h3>
+          </div>
+          <div class="w-100"></div>
+<!-- Line Break  -->  
+
+<!-- Martial-->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage martial">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                A. Martial <br>
+                FRANCE, <br>
+                1995
+            </div>
+          </div>
+<!-- Rashford                -->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage rashford">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                M. Rashford <br>
+                ENGLAND, <br>
+                1997
+            </div>
+          </div>  
+<!-- Greenwood-->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage greenwood">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                M. Greenwood <br>
+                ENGLAND, <br>
+                2001
+            </div>
+          </div>    
+<!-- ighalo-->
+          <div class="col-6 col-xl-3 mt-4 ">
+            <div class="playerSlingImage ighalo">
+            </div>
+            <div id="slingOpacity"></div>
+            <div id="slingText" class=" d-flex flex-column justify-content-end align-items-center pl-2 pb-2 ">
+                I. Ighalo <br>
+                NIGERIA, <br>
+                1989
+            </div>
+          </div>    
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="">
+    <div class="row mx-1 pt-5 px-4">
+      <div class="col-md-4 ">
+        <h4><b>CONTACT</b></h4>
+        <div id="footerSocials" class="d-flex">
+          <h6><i class="fab fa-facebook"></i> FaceBook</h6>
+          <h6 class="ml-3"><i class="fab fa-github"></i> GitHub</h6>  
+        </div>
+
+        <div id="footerSocials" class="d-flex mt-1">
+          <h6><i class="fab fa-instagram"></i> Instagram</h6>
+          <h6 class="ml-3"><i class="fab fa-twitter"></i> Twitter</h6>
+        </div><br>
+        <h6><b>Subscribe Newsletter</b></h6>
+        <form action="" class="mb-4">
+          <div class="form-group">
+            <input type="email" class="noOutline form-control " placeholder="E-mail"/>
+            <button type="submit" class="form-control btn btn-dark mt-2 ">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h4><b>PAGES/CREDITS</b></h4>
+        About Developer<br>
+        GitHub Repository <br>
+        API Used <br>
+        References & Credits
+      </div>
+      
+      <div class="col-md-4">
+        <h4><b>SEND MESSAGE</b></h4>
+        <form>
+          <div class="form-group">
+            <textarea class="form-control" maxlength="200" ></textarea>
+            <button type="submit" class="form-control btn btn-success mt-2">SEND <i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 text-center py-4">Made With <i class="fas fa-heart"></i> by @reelmza </div>
+
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="public/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="public/js/plugins.js"></script>
+  <script src="public/js/main.js"></script>
+
+</body>
+
+</html>
